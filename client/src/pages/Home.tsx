@@ -72,6 +72,13 @@ const TimeRipple = () => {
 export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [mergeProgress, setMergeProgress] = useState(0);
+  const [emailCopied, setEmailCopied] = useState(false);
+
+  const copyEmail = () => {
+    navigator.clipboard.writeText('riyapanwar0307@gmail.com');
+    setEmailCopied(true);
+    setTimeout(() => setEmailCopied(false), 2000);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -216,8 +223,8 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-foreground">Let's Connect</h2>
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <a href="mailto:riyapanwar0307@gmail.com" className="px-6 py-3 rounded-lg bg-primary text-background font-semibold hover:bg-primary/90 transition-all">Email Me</a>
+            <div className="flex flex-wrap justify-center gap-4">
+              <button onClick={copyEmail} className="px-6 py-3 rounded-lg bg-primary text-background font-semibold hover:bg-primary/90 transition-all">{emailCopied ? 'Email Copied!' : 'Email Me'}</button>
             <a href="https://github.com/riyap03" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg border border-border text-foreground hover:border-primary/60 hover:text-primary transition-all">GitHub</a>
             <a href="https://www.linkedin.com/in/riya-panwar-486845332/" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg border border-border text-foreground hover:border-primary/60 hover:text-primary transition-all">LinkedIn</a>
             <a href="/contact" className="px-6 py-3 rounded-lg border border-border text-foreground hover:border-primary/60 hover:text-primary transition-all">Contact Form</a>
