@@ -30,10 +30,8 @@ export default function HeroPremium() {
 
   useEffect(() => {
     if (!showContent) return;
-    if (currentLine < lines.length) {
-      const timer = setTimeout(() => setCurrentLine(currentLine + 1), 2000);
-      return () => clearTimeout(timer);
-    }
+    const timer = setTimeout(() => setCurrentLine((currentLine + 1) % lines.length), 2000);
+    return () => clearTimeout(timer);
   }, [currentLine, showContent]);
 
   return (
