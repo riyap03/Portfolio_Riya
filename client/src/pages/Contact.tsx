@@ -7,7 +7,7 @@ const socials = [
   { label: 'GitHub', href: 'https://github.com/riyap03', icon: Github },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/riya-panwar-486845332/', icon: Linkedin },
   { label: 'Email', href: 'mailto:riyapanwar0307@gmail.com', icon: Mail },
-  { label: 'Resume', href: '/Riyaresume.pdf', icon: FileText },
+  { label: 'Resume', href: '/Riya_panwar_Resume.pdf', icon: FileText },
 ];
 
 export default function Contact() {

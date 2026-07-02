@@ -59,7 +59,7 @@ export default function ProjectsEnhanced({ id }: SectionProps) {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   return (
-    <section id={id} className="py-12 md:py-16 relative overflow-hidden">
+    <section id={id} className="py-8 md:py-12 relative overflow-hidden">
       {/* Background accent */}
       <div className="absolute top-1/3 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10" />
 
@@ -74,7 +74,7 @@ export default function ProjectsEnhanced({ id }: SectionProps) {
             Featured Projects
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6">
             {projects.map((project, index) => (
               <motion.div
                 key={project.name}
@@ -131,7 +131,7 @@ export default function ProjectsEnhanced({ id }: SectionProps) {
                     </div>
 
                     {/* Content */}
-                    <div className="p-5 -mt-10 relative z-10">
+                    <div className="p-4 -mt-8 relative z-10">
                       {/* Icon and Title */}
                       <div className="flex items-start justify-between mb-4">
                         <div>
@@ -142,12 +142,12 @@ export default function ProjectsEnhanced({ id }: SectionProps) {
                         </div>
                       </div>
 
-                      <p className="text-primary font-semibold text-sm mb-4">
+                      <p className="text-primary font-semibold text-sm mb-3">
                         {project.tagline}
                       </p>
 
                       {/* Description */}
-                      <p className="text-muted-foreground mb-4 leading-relaxed">
+                      <p className="text-muted-foreground mb-3 leading-relaxed">
                         {project.description}
                       </p>
 
@@ -171,7 +171,7 @@ export default function ProjectsEnhanced({ id }: SectionProps) {
                       </div>
 
                       {/* Tech stack */}
-                      <div className="mb-4 pb-4 border-b border-border/50">
+                      <div className="mb-3 pb-3 border-b border-border/50">
                         <p className="text-sm font-semibold text-foreground mb-2">Tech Stack:</p>
                         <div className="flex flex-wrap gap-2">
                           {project.tech.map((tech) => (

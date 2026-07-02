@@ -70,7 +70,7 @@ export default function HeroPremium() {
             Contact Me
           </a>
 
-          <a href="/Riyaresume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-lg border-2 border-secondary text-secondary hover:bg-secondary/10 transition-all duration-200">
+          <a href="/Riya_panwar_Resume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-lg border-2 border-secondary text-secondary hover:bg-secondary/10 transition-all duration-200">
             Resume
           </a>
         </div>

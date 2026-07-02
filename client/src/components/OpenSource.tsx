@@ -32,7 +32,7 @@ const contributions = [
 
 export default function OpenSource() {
   return (
-    <section className="py-20 md:py-32 bg-card/30 relative overflow-hidden">
+    <section className="py-12 md:py-16 bg-card/30 relative overflow-hidden">
       {/* Background accent */}
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/5 rounded-full blur-3xl -z-10" />
 
@@ -46,11 +46,11 @@ export default function OpenSource() {
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 text-foreground">
             Open Source Journey
           </h2>
-          <p className="text-lg text-muted-foreground mb-16">
+          <p className="text-base text-muted-foreground mb-12">
             Contributing to world-class projects and learning from the community
           </p>
 
-          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-6">
             {contributions.map((contrib, index) => (
               <motion.div
                 key={contrib.project}
@@ -58,7 +58,7 @@ export default function OpenSource() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-background/50 border border-border rounded-lg p-8 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 group"
+                className="bg-background/50 border border-border rounded-lg p-6 backdrop-blur-sm hover:border-primary/50 transition-all duration-300 group"
               >
                 {/* Header */}
                 <div className="flex items-start justify-between mb-4">
@@ -74,7 +74,7 @@ export default function OpenSource() {
                 </div>
 
                 {/* PRs */}
-                <div className="mb-6 space-y-2">
+                <div className="mb-4 space-y-2">
                   {contrib.prs.map((pr, idx) => (
                     <motion.div
                       key={idx}
@@ -98,7 +98,7 @@ export default function OpenSource() {
                 </div>
 
                 {/* Details */}
-                <p className="text-sm text-muted-foreground leading-relaxed border-t border-border/50 pt-6">
+                <p className="text-sm text-muted-foreground leading-relaxed border-t border-border/50 pt-4">
                   {contrib.details}
                 </p>
               </motion.div>
@@ -111,7 +111,7 @@ export default function OpenSource() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
-            className="mt-16 text-center"
+            className="mt-12 text-center"
           >
             <p className="text-lg text-muted-foreground mb-6">
               Passionate about open source and continuous learning. Always looking for new projects to contribute to.

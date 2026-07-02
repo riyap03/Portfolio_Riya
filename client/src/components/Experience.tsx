@@ -77,9 +77,8 @@ contributions: [
         url: '#',
         description: 'Contributed to various foundation initiatives',
         contributions: [
-          'Assisted in project coordination and execution',
-          'Collaborated with team members on deliverables',
-          'Improved communication and workflow efficiency'
+          ' Enhanced the NGO website UI/UX by improving responsiveness, accessibility, and overall user experience across multiple pages',
+          'Developed a dynamic donation form with real-time validation and secure payment integration',
         ]
       }
     ],
@@ -98,7 +97,7 @@ interface SectionProps {
 
 export default function Experience({ id }: SectionProps) {
   return (
-    <section id={id} className="py-12 md:py-16 relative overflow-hidden">
+    <section id={id} className="py-8 md:py-12 relative overflow-hidden">
       {/* Background accent */}
       <div className="absolute top-1/2 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -z-10 transform translate-y-1/2" />
 
@@ -113,7 +112,7 @@ export default function Experience({ id }: SectionProps) {
             Work Experience
           </h2>
 
-          <div className="space-y-8">
+          <div className="space-y-6">
             {experiences.map((exp, index) => (
               <motion.div
                 key={`${exp.company}-${index}`}
@@ -121,7 +120,7 @@ export default function Experience({ id }: SectionProps) {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="bg-card border border-border rounded-lg p-5 md:p-6 glow-hover"
+                className="bg-card border border-border rounded-lg p-4 md:p-5 glow-hover"
               >
                 {/* Header */}
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
@@ -139,12 +138,12 @@ export default function Experience({ id }: SectionProps) {
                 </div>
 
                 {/* Overview */}
-                <p className="text-muted-foreground mb-4 leading-relaxed">
+                <p className="text-muted-foreground mb-3 leading-relaxed">
                   {exp.overview}
                 </p>
 
                 {/* Projects */}
-                <div className="space-y-6 mb-4">
+                <div className="space-y-4 mb-3">
                   {exp.projects.map((project, pIdx) => (
                     <div key={pIdx} className="border-l-2 border-primary/30 pl-4">
                       <div className="flex items-center gap-3 mb-2">

@@ -167,7 +167,7 @@ export default function Home() {
       <ProjectsEnhanced id="projects" />
 
       {/* Journey Section - Pull Request Journey */}
-      <section className="relative min-h-screen py-20">
+      <section className="relative min-h-screen py-12">
         <div className="container mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
@@ -184,7 +184,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative min-h-screen flex items-center justify-center py-20">
+      <section className="relative min-h-screen flex items-center justify-center py-12">
         <motion.div
           className="container mx-auto px-4 text-center"
           whileHover={{ scale: 1.02 }}
@@ -228,7 +228,7 @@ export default function Home() {
             <a href="https://github.com/riyap03" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg border border-border text-foreground hover:border-primary/60 hover:text-primary transition-all">GitHub</a>
             <a href="https://www.linkedin.com/in/riya-panwar-486845332/" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg border border-border text-foreground hover:border-primary/60 hover:text-primary transition-all">LinkedIn</a>
             <a href="/contact" className="px-6 py-3 rounded-lg border border-border text-foreground hover:border-primary/60 hover:text-primary transition-all">Contact Form</a>
-            <a href="/Riyaresume.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg border border-border text-foreground hover:border-primary/60 hover:text-primary transition-all">Resume</a>
+            <a href="/Riya_panwar_Resume.pdf" target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg border border-border text-foreground hover:border-primary/60 hover:text-primary transition-all">Resume</a>
           </div>
         </div>
       </section>
