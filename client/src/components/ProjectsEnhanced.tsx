@@ -35,19 +35,19 @@ const projects = [
     icon: '📄'
   },
   {
-    name: 'Event Management System',
-    tagline: 'Full-stack web application',
-    description: 'A comprehensive CRUD system for events with real-time updates and secure authentication.',
-    tech: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
+    name: 'Sahara 2.0',
+    tagline: 'Elder-care support application',
+    description: 'An elder-care application that supports care coordination with intelligent backup matching, voice assistance, and emergency caregiver workflows.',
+    tech: ['React Native', 'Node.js', 'Express', 'PostgreSQL'],
     features: [
-      'Event Management',
-      'Real-time Updates',
-      'JWT Authentication',
-      'Admin Dashboard'
+      'Intelligent Backup Matching',
+      'Voice Assistance',
+      'Emergency Caregiver Coordination',
+      'Care Support Services'
     ],
-    github: 'https://github.com/riyap03/Event_management_system.git',
+    github: 'https://github.com/riyap03/Sahara2.0',
     color: 'from-orange-400 to-red-500',
-    icon: '📅'
+    icon: '🤝'
   }
 ];
 
